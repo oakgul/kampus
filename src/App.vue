@@ -21,6 +21,7 @@ export default {
     padding: 0;
     border: none;
     text-decoration: none;
+    outline: none;
   }
 
   .view {
