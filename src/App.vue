@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <router-view />
+    <router-view class="view" />
   </div>
 </template>
 
@@ -21,5 +21,14 @@ export default {
     padding: 0;
     border: none;
     text-decoration: none;
+  }
+
+  .view {
+    max-width: 1366px;
+    margin-right: auto;
+    margin-left: auto;
+    /* background-color: #F3F1F0; */
+    /* border-left: 1px solid #000;
+    border-right: 1px solid #000; */
   }
 </style>

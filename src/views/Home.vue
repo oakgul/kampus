@@ -1,11 +1,13 @@
 <template>
   <div class="layout">
     <div class="main-text">
-      <div class="header-text">Kampüs'te Olup <br> Biten Herşey</div>
-      <p>Merhaba öğrenciler, artık bu uygulama<br> sayesinde yapabilecek, kampüs içinde neler<br> olup bitiyor haber alıp verebileceksiniz</p>
+      <div class="header-text">Kampüs'te Olup<br>Biten Herşey</div>
+      <p>Merhaba öğrenciler, artık bu uygulama<br> 
+        sayesinde duyuru yapabilecek, kampüs içinde neler<br> 
+        olup bitiyor haber alıp verebileceksiniz</p>
       <div class="buttons">
-        <button class="join">JOIN US</button>
-        <button class="sign">SIGN IN</button>
+        <button class="join">BİZE KATIL</button>
+        <button class="sign">GİRİŞ</button>
       </div>
     </div>
 
@@ -26,50 +28,55 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 250px;
+    /* margin-left: 250px; */
   }
 
   .header-text {
     font-family: Asap;
     font-weight: bold;
-    font-size: 96px;
+    font-size: 70px;
     text-align: center;
-    margin-bottom: 52px;
+    margin-bottom: 30px;
   }
 
   p {
     font-family: Roboto;
     font-weight: 300;
-    font-size: 36px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 71px;
 
   }
 
   button {
-    width: 300px;
-    height: 90px;
+    width: 200px;
+    height: 70px;
     font-family: Roboto;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    border-radius: 17px;
+    /* font-weight: bold; */
+    font-size: 20px;
+    /* line-height: 20px; */
+    border-radius: 18px;
     cursor: pointer;
     margin: 0 37px 0 37px;
-    outline: none;
   }
 
   .join {
     background-color: #FF6B71;
   }
 
+  .join:hover {
+        border: 1px solid black;
+
+  }
+
   .sign {
-    border: 1px solid black;
+    border: 1px solid gray;
     background: white;
   }
 
-  .main-img {
-    margin-right: 200px;
+  .sign:hover {
+    border: 1px solid orange;
   }
+
 </style>
 
