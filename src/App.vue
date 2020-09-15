@@ -29,7 +29,7 @@ export default {
     margin-right: auto;
     margin-left: auto;
     /* background-color: #F3F1F0; */
-    /* border-left: 1px solid #000;
-    border-right: 1px solid #000; */
+    /* border-left: 1px solid #000; */
+    /* border-right: 1px solid #000; */
   }
 </style>
