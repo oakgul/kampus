@@ -28,7 +28,7 @@
                     <img src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
                         <div class="day">15</div>
-                        <div class="mo">EYL</div>
+                        <div class="month">EYL</div>
                         <div class="year">2020</div>
                     </div>
                 </div>
@@ -45,7 +45,8 @@
         <!-- DASHBOARD PROFİLE -->
         <div class="profile">
             <div class="settings">
-                bildirim ve ayarlar ikonları buraya 
+                <img class="settings-icon" src="@/assets/bell.svg" alt="bell">
+                <img class="settings-icon" src="@/assets/settings.svg" alt="bell">
             </div>
 
             <img class="dashboard-image" src="@/assets/orhanprofil.jpg" alt="profile">
@@ -130,12 +131,20 @@ img {
 
 .profile {
     min-width: 300px;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
 }
 
 .dashboard-image {
     width: 150px;
     height: 150px;
+}
+
+.settings-icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+    /* float: right; */
+    cursor: pointer;
 }
 
 
