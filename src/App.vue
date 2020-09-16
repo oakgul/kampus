@@ -24,6 +24,10 @@ export default {
     outline: none;
   }
 
+  body {
+    background-color: #EBEBFA;
+  }
+
   .view {
     max-width: 1366px;
     margin-right: auto;
@@ -32,4 +36,6 @@ export default {
     /* border-left: 1px solid #000; */
     /* border-right: 1px solid #000; */
   }
+
+
 </style>
