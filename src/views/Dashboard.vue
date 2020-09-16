@@ -53,9 +53,18 @@
 
             <div class="department">Bilgisayar Mühendisliği</div>
 
-            <div class="make-announce">DUYURU YAP</div>
-            <div class="make-announce">DERS NOTLARI</div>
-            <div class="make-announce">SORU SOR</div>
+            <div class="sidebar-buttons">
+                <img class="sidebar-icons" src="@/assets/cloud.svg" alt="announce">
+                DUYURU YAP
+            </div>
+            <div class="sidebar-buttons">
+                <img class="sidebar-icons" src="@/assets/cloud.svg" alt="announce">
+                DERS NOTLARI
+            </div>
+            <div class="sidebar-buttons">
+                <img class="sidebar-icons" src="@/assets/cloud.svg" alt="announce">
+                SORU SOR
+            </div>
         </div>
         
     </div>
@@ -75,10 +84,7 @@
     font-size: 15px;
     /* overflow:scroll; */
     cursor: pointer;
-
     /* background-color: gainsboro; */
-    /* border-right: 1px solid red;
-    border-left: 1px solid red; */
 }
 
 .card {
@@ -130,6 +136,9 @@ img {
 }
 
 .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     min-width: 300px;
     /* background-color: lightgreen; */
 }
@@ -139,13 +148,41 @@ img {
     height: 150px;
 }
 
+.department {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-family: Roboto;
+}
+
 .settings-icon {
     width: 32px;
     height: 32px;
-    margin-left: 20px;
-    /* float: right; */
+    margin-left: 110px;
+    margin-right: -80px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 
+.sidebar-buttons {
+    width: 200px;
+    height: 50px;
+    background-color:skyblue;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    position: relative;
+    font-family: Roboto;
+    font-size: 15px;    
+    cursor: pointer;
+}
+
+.sidebar-icons {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
 
 </style>
