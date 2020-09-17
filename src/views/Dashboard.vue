@@ -147,7 +147,7 @@
                 <div class="photo-date">
                     <img src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
-                        <div class="day">15</div>
+                        <div class="day">20</div>
                         <div class="month">EYL</div>
                         <div class="year">2020</div>
                     </div>
@@ -164,7 +164,24 @@
                 <div class="photo-date">
                     <img src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
-                        <div class="day">15</div>
+                        <div class="day">05</div>
+                        <div class="month">EYL</div>
+                        <div class="year">2020</div>
+                    </div>
+                </div>
+
+                <div class="head-content">
+                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
+                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
+                </div>
+            </div>
+
+            <div class="card">
+
+                <div class="photo-date">
+                    <img src="@/assets/orhanprofil.jpg" alt="profile">
+                    <div class="date">
+                        <div class="day">31</div>
                         <div class="month">EYL</div>
                         <div class="year">2020</div>
                     </div>
@@ -249,24 +266,7 @@
                 <div class="photo-date">
                     <img src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
-                        <div class="day">15</div>
-                        <div class="month">EYL</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
-                </div>
-            </div>
-
-            <div class="card">
-
-                <div class="photo-date">
-                    <img src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">15</div>
+                        <div class="day">20</div>
                         <div class="month">EYL</div>
                         <div class="year">2020</div>
                     </div>
@@ -348,18 +348,23 @@
     width: 470px;
     height: 140px;
     display: flex;
-    /* border: 1px solid black; */
+    /* border: 1px dashed black; */
     border-radius: 10px;
     margin-bottom: 10px;
     margin-right: auto;
     margin-left: auto;
     background-color: #F5F5FF;
+    transform: all;
+    transition-duration: 500ms;
+    border-bottom: 1px solid gainsboro;
+
 }
 
 .card:hover {
     background: #5D5DAF;
-    color: white;
     filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.5));
+    background-color: #fff;
+
 }
 
 .photo-date {
@@ -369,25 +374,29 @@
 
 .date {
     width: 40px;
-    height: 71px;
+    height: 65.3px;
     background: rgba(196, 196, 196, 0.13);
     text-align: center;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     margin-left: 5px;
     margin-bottom: -10;
+    color: #939393;
+    padding-top: 5px;
+    border: 1px solid gray;
+    border-bottom: 0;
+
 }
 
 .day {
-    width: 28px;
-    height: 22px;
-    font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
-    color: #939393;
+}
+
+.month {
+    font-size: 11px;
 }
 
 .head-content {    
@@ -401,6 +410,7 @@ h1 {
     font-size: 24px;
     line-height: 24px;
     color: #5D5DAF;
+    margin-bottom: 10px;
 }
 
 p {
@@ -426,6 +436,7 @@ img {
     min-width: 345px;
     height: 100vh;
     background: #F5F5FF;
+    border-top-left-radius: 56px;
 }
 
 .dashboard-image {
