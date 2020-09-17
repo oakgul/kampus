@@ -313,15 +313,15 @@
 
             <div class="sidebar-buttons">
                 <img class="sidebar-icons" src="@/assets/plus-square.svg" alt="announce">
-                DUYURU YAP
+                <span>DUYURU YAP</span>
             </div>
             <div class="sidebar-buttons">
-                <img class="sidebar-icons" src="@/assets/message-circle.svg" alt="announce">
-                DERS NOTLARI
+                <img class="sidebar-icons" src="@/assets/file-text.svg" alt="announce">
+                <span>DERS NOTLARI</span>
             </div>
             <div class="sidebar-buttons">
                 <img class="sidebar-icons" src="@/assets/help-circle.svg" alt="announce">
-                SORU SOR
+                <span>SORU SOR</span>
             </div>
         </div>
         
@@ -491,21 +491,31 @@ img {
     height: 80px;
     background-color: #E3E3FC;
     text-align: center;
-    line-height: 75px;
+    line-height: 80px;
     margin-bottom: 20px;
     border-radius: 40px;
     position: relative;
     font-family: Roboto;
     font-size: 18px;
     cursor: pointer;
+    transition-duration: 500ms;
+    border: 1px solid white;
+}
+
+.sidebar-buttons:hover {
+    background: white;
+    color: gray;
+    filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.2));
+    margin-left: 20px;
+    border: 1px dashed gray;
 }
 
 .sidebar-icons {
-    width: 62px;
-    height: 62px;
+    width: 42px;
+    height: 42px;
     position: absolute;
-    left: 10px;
-    top: 8px;
+    left: 20px;
+    top: 20px;
 }
 
 </style>
