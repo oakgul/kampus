@@ -1,5 +1,6 @@
 <template>
-    <div class="dashboard">
+    <div class="dashboard-container">
+        <div class="dashboard">
 
         <div class="school-announce">
             <div class="card">
@@ -155,7 +156,7 @@
 
                 <div class="head-content">
                     <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
+                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı konusunda ne olduğunu bizde hala bilmiyoruz</p>
                 </div>
             </div>
             
@@ -325,13 +326,20 @@
         </div>
         
     </div>
+    </div>
 </template>
 
 <style scoped>
 
+.dashboard-container {
+    /* Bu kısma daha sonra arka plan rengi gelecek */
+    
+}
+
 .dashboard {
     display: flex;
     justify-content: space-around;
+    margin-top: 10px;
 }
 
 .school-announce {
@@ -378,7 +386,7 @@
     margin-bottom: -10;
     color: #939393;
     padding-top: 5px;
-    border: 1px solid gray;
+    border: 1px solid rgb(189, 182, 182);
     border-bottom: 0;
 
 }
@@ -409,6 +417,10 @@ h1 {
 }
 
 p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     width: 344px;
     height: 57px;
     font-family: Roboto;

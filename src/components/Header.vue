@@ -1,5 +1,6 @@
 <template>
-    <header class="header">
+    <header class="header-container">
+        <div class="header">
         <div class="logo">
             <img src="../assets/logo.svg" alt="logo">
         </div>
@@ -9,12 +10,21 @@
             <router-link class="nav-items" to="/register">Kayıt</router-link>
             <router-link class="nav-items" to="/login">Giriş</router-link>
         </div>
+    </div>
     </header>
 </template>
 
 
 
 <style scoped>
+
+    .header-container {
+        width: 100%;
+        background: white;
+        border-bottom: 1px solid #e8e8e8;
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+    }
+
     .header {
         max-width: 1366px;
         margin-right:auto;
@@ -28,9 +38,8 @@
     }
 
     .nav-items {
-        font-family: Roboto;
-        /* font-weight: bold; */
-        font-size: 20px;
+        font-family: Asap;
+        font-size: 18px;
         color: #2F1728;
         margin-left: 80px;
     }
