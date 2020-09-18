@@ -1,5 +1,7 @@
 <template>
-    <div class="register">
+    <div>
+        <Header />
+        <div class="register">
         <div class="image">
             <img src="@/assets/register.svg" alt="register">
         </div>
@@ -9,16 +11,6 @@
                 <input required type="text" placeholder="Soyad"><br>
                 <input required type="email" placeholder="E-posta"><br>
                 <input required type="password" placeholder="Parola"><br>
-                <!-- <label  for="erkek">
-                    <input class="cinsiyet" type="radio" value="erkek" name="cinsiyet">Erkek
-                </label>
-                <label  for="kadın">
-                    <input required class="cinsiyet" type="radio" value="kadın" name="cinsiyet">Kadın
-                </label>
-                <label  for="diğer">
-                    <input required class="cinsiyet" type="radio" value="diğer" name="cinsiyet">Diğer
-                </label>
-                <br> -->
                 <select>
                     <option value="kadın">Kadın</option>
                     <option value="erkek">Erkek</option>
@@ -33,19 +25,23 @@
                     <option selected value="öğrenci">Öğrenci</option>
                     <option value="akademisyen">Akademisyen</option>
                 </select><br>
-                <!-- <label  for="öğrenci">
-                    <input required class="cinsiyet" type="radio" value="öğrenci" name="cinsiyet">Öğrenci
-                </label>
-                <label  for="akademisyen">
-                    <input required class="cinsiyet" type="radio" value="akademisyen" name="cinsiyet">Akademisyen
-                </label><br> -->
-                <!-- <input class="cinsiyet" required type="checkbox">Kullancı sözleşmesini kabul ediyorum. -->
 
                 <button>Kayıt Ol</button>
             </form>
         </div>
     </div>
+    </div>
 </template>
+
+<script>
+    import Header from '@/components/Header';
+
+export default {
+    components : {
+        Header,
+    }
+}
+</script>
 
 <style scoped>
 

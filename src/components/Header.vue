@@ -21,8 +21,8 @@
     .header-container {
         width: 100%;
         background: white;
-        border-bottom: 1px solid #e8e8e8;
-        box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+        /* border-bottom: 1px solid #e8e8e8;
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,.05); */
     }
 
     .header {
@@ -40,12 +40,12 @@
     .nav-items {
         font-family: Asap;
         font-size: 18px;
-        color: #2F1728;
+        color: #525f7f;
         margin-left: 80px;
     }
 
     .nav-items:hover {
-        color: orange;
+        color: #FFD037;
     }
 
 </style>

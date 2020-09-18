@@ -1,7 +1,9 @@
 <template>
-    <div class="register">
+    <div>
+        <Header />
+        <div class="register">
         <div class="image">
-            <img src="@/assets/login.svg" alt="register">
+            <img src="@/assets/register.svg" alt="register">
         </div>
         <div class="register-form">
             <form>
@@ -11,7 +13,18 @@
             </form>
         </div>
     </div>
+    </div>
 </template>
+
+<script>
+    import Header from '@/components/Header';
+
+export default {
+    components : {
+        Header,
+    }
+}
+</script>
 
 <style scoped>
 

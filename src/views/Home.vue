@@ -1,21 +1,34 @@
 <template>
-  <div class="layout">
-    <div class="main-text">
-      <div class="header-text">Kampüs'te Olup<br>Biten Herşey</div>
-      <p>Merhaba öğrenciler, artık bu uygulama<br> 
-        sayesinde duyuru yapabilecek, kampüs içinde neler<br> 
-        olup bitiyor haber alıp verebileceksiniz</p>
-      <div class="buttons">
-        <button class="join">BİZE KATIL</button>
-        <button class="sign">GİRİŞ</button>
+ <div>
+  <Header />
+    <div class="layout">
+      <div class="main-text">
+        <div class="header-text">Kampüs'te Olup<br>Biten Herşey</div>
+          <p>Merhaba öğrenciler, artık bu uygulama<br> 
+            sayesinde duyuru yapabilecek, kampüs içinde neler<br> 
+            olup bitiyor haber alıp verebileceksiniz</p>
+          <div class="buttons">
+            <button class="join">BİZE KATIL</button>
+            <button class="sign">GİRİŞ</button>
+          </div>
+      </div>
+
+      <div class="main-img">
+        <img src="../assets/main-img.svg" alt="main image">
       </div>
     </div>
-
-    <div class="main-img">
-      <img src="../assets/main-img.svg" alt="main image">
-    </div>
-  </div>
+</div> 
 </template>
+
+<script>
+  import Header from '@/components/Header'
+
+export default {
+  components : {
+    Header,
+  }
+}
+</script>
 
 <style scoped>
   .layout {
@@ -58,15 +71,19 @@
     border-radius: 18px;
     cursor: pointer;
     margin: 0 37px 0 37px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    transition: all;
   }
 
   .join {
-    background-color: #FF6B71;
+    background-color: #FFD037;
+    transition-duration: 500ms;
   }
 
   .join:hover {
         border: 1px solid black;
-
+        color: white;
+  /* opacity: 100%; */
   }
 
   .sign {
@@ -75,7 +92,7 @@
   }
 
   .sign:hover {
-    border: 1px solid orange;
+    border: 1px solid #FFD037;
   }
 
 </style>

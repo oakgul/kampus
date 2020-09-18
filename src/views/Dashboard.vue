@@ -1,5 +1,4 @@
 <template>
-    <div class="dashboard-container">
         <div class="dashboard">
 
         <div class="school-announce">
@@ -326,15 +325,11 @@
         </div>
         
     </div>
-    </div>
+    
 </template>
 
 <style scoped>
 
-.dashboard-container {
-    /* Bu kısma daha sonra arka plan rengi gelecek */
-    
-}
 
 .dashboard {
     display: flex;
@@ -441,13 +436,14 @@ img {
 }
 
 .notification {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     background-color: orangered;
+    border: 2px solid #F5F5FF;;
     border-radius: 50%;
     position: absolute;
     top: 5px;
-    right: -16px;
+    right: -17px;
 }
 
 .profile {
