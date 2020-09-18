@@ -1,7 +1,9 @@
 <template>
-        <div class="dashboard">
+    <div class="dashboard-container">
 
-        <div class="school-announce">
+        <DashboardHeader />
+        <div class="dashboard">            
+        <!-- <div class="school-announce">
             <div class="card">
 
                 <div class="photo-date">
@@ -34,113 +36,13 @@
                     <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
                     <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
                 </div>
-            </div>
+            </div> -->
 
-             <div class="card">
-
-                <div class="photo-date">
-                    <img src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">15</div>
-                        <div class="month">EYL</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
-                </div>
-            </div>
-
-             <div class="card">
-
-                <div class="photo-date">
-                    <img src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">15</div>
-                        <div class="month">EYL</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
-                </div>
-            </div>
-
-            <div class="card">
-
-                <div class="photo-date">
-                    <img src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">15</div>
-                        <div class="month">EYL</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
-                </div>
-            </div>
-
-            <div class="card">
-
-                <div class="photo-date">
-                    <img src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">15</div>
-                        <div class="month">EYL</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
-                </div>
-            </div>
-
-            <div class="card">
-
-                <div class="photo-date">
-                    <img src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">15</div>
-                        <div class="month">EYL</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
-                </div>
-            </div>
-
-            <div class="card">
-
-                <div class="photo-date">
-                    <img src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">15</div>
-                        <div class="month">AĞS</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
-                </div>
-            </div>
+             
 
             <!-- --------------------------------------------------------------- -->
             
-        </div>
+        <!-- </div>
         <div class="school-announce">
             <div class="card">
 
@@ -174,128 +76,9 @@
                     <h1>VERİTABANI DERSİ SINAV TARİHİ</h1>
                     <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
                 </div>
-            </div>
-
-            <div class="card">
-
-                <div class="photo-date">
-                    <img src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">31</div>
-                        <div class="month">EYL</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
-                </div>
-            </div>
-
-            <div class="card">
-
-                <div class="photo-date">
-                    <img src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">15</div>
-                        <div class="month">EYL</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
-                </div>
-            </div>
-
-            <div class="card">
-
-                <div class="photo-date">
-                    <img src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">15</div>
-                        <div class="month">EYL</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
-                </div>
-            </div>
-
-            <div class="card">
-
-                <div class="photo-date">
-                    <img src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">15</div>
-                        <div class="month">EYL</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
-                </div>
-            </div>
-
-            <div class="card">
-
-                <div class="photo-date">
-                    <img src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">15</div>
-                        <div class="month">EYL</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
-                </div>
-            </div>
-
-            <div class="card">
-
-                <div class="photo-date">
-                    <img src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">20</div>
-                        <div class="month">EYL</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
-                </div>
-            </div>
-
-            <div class="card">
-
-                <div class="photo-date">
-                    <img src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">15</div>
-                        <div class="month">EYL</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
-                </div>
-            </div>
+            </div>           
             
-        </div>
+        </div> -->
 
         <!-- DASHBOARD PROFİLE -->
         <div class="profile">
@@ -324,9 +107,19 @@
             </div>
         </div>
         
-    </div>
-    
+    </div>    
+    </div>    
 </template>
+
+<script>
+    import DashboardHeader from '@/components/DashboardHeader'
+
+export default {
+    components : {
+        DashboardHeader,
+    }
+}
+</script>
 
 <style scoped>
 

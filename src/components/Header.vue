@@ -1,8 +1,8 @@
 <template>
     <header class="header-container">
-        <div class="header">
+    <div class="header">
         <div class="logo">
-            <img src="../assets/logo.svg" alt="logo">
+            <img src="@/assets/logo.svg" alt="logo">
         </div>
         <div class="nav">
             <router-link class="nav-items" to="/">Anasayfa</router-link>
@@ -13,8 +13,6 @@
     </div>
     </header>
 </template>
-
-
 
 <style scoped>
 
@@ -30,7 +28,6 @@
         margin-right:auto;
         margin-left:auto;
         height: 66px;
-        /* background-color: darkseagreen; */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
