@@ -85,7 +85,88 @@
                     <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
                     <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı konusunda ne olduğunu bizde hala bilmiyoruz</p>
                 </div>
+            </div>   
+
+            <div class="card">
+                <div class="photo-date">
+                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
+                    <div class="date">
+                        <div class="day">20</div>
+                        <div class="month">TEM</div>
+                        <div class="year">2020</div>
+                    </div>
+                </div>
+
+                <div class="head-content">
+                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
+                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı konusunda ne olduğunu bizde hala bilmiyoruz</p>
+                </div>
+            </div>   
+
+            <div class="card">
+                <div class="photo-date">
+                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
+                    <div class="date">
+                        <div class="day">20</div>
+                        <div class="month">TEM</div>
+                        <div class="year">2020</div>
+                    </div>
+                </div>
+
+                <div class="head-content">
+                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
+                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı konusunda ne olduğunu bizde hala bilmiyoruz</p>
+                </div>
+            </div>   
+
+            <div class="card">
+                <div class="photo-date">
+                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
+                    <div class="date">
+                        <div class="day">20</div>
+                        <div class="month">TEM</div>
+                        <div class="year">2020</div>
+                    </div>
+                </div>
+
+                <div class="head-content">
+                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
+                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı konusunda ne olduğunu bizde hala bilmiyoruz</p>
+                </div>
+            </div>   
+
+            <div class="card">
+                <div class="photo-date">
+                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
+                    <div class="date">
+                        <div class="day">20</div>
+                        <div class="month">TEM</div>
+                        <div class="year">2020</div>
+                    </div>
+                </div>
+
+                <div class="head-content">
+                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
+                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı konusunda ne olduğunu bizde hala bilmiyoruz</p>
+                </div>
             </div>    
+            <div class="card">
+                <div class="photo-date">
+                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
+                    <div class="date">
+                        <div class="day">20</div>
+                        <div class="month">TEM</div>
+                        <div class="year">2020</div>
+                    </div>
+                </div>
+
+                <div class="head-content">
+                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
+                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı konusunda ne olduğunu bizde hala bilmiyoruz</p>
+                </div>
+            </div>  
+
+            
             
         </div>
     </div>
@@ -96,7 +177,9 @@
         display: flex;
 
         .school-announce {
+            // height: 850px;
             font-family: Roboto;
+            // overflow: scroll;
 
             .card {
                 width: 470px;

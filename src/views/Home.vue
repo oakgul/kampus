@@ -17,15 +17,18 @@
         <img src="../assets/main-img.svg" alt="main image">
       </div>
     </div>
+    <Footer />
 </div> 
 </template>
 
 <script>
-  import Header from '@/components/Header'
+  import Header from '@/components/Header';
+  import Footer from '@/components/Footer';
 
 export default {
   components : {
     Header,
+    Footer,
   }
 }
 </script>
