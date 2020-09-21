@@ -1,6 +1,7 @@
 <template>
     <div class="profile">
 
+        <div class="cover"></div>
         <img class="dashboard-image" src="@/assets/orhanprofil.jpg" alt="profile">
         <div class="user-name">Orhan Akgül</div>    
         <div class="department">Bilgisayar Mühendisliği</div>
@@ -31,14 +32,22 @@
     min-width: 350px;
     height: calc(100vh - 66px);
     background: $main-color;
-    border-top-left-radius: 56px;
+    border-radius: 4px;
+
+    .cover {
+        width: 100%;
+        height: 80px;
+        background: url(../assets/cover-bg.png) no-repeat center center;
+        border-radius: 4px;
+    }
 
 
     .dashboard-image {
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
         border-radius: 50%;
-        margin-top: 40px;
+        margin-top:-50px;
+        border: 3px solid white;
     }
 
     .user-name {

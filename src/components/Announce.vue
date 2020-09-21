@@ -16,6 +16,54 @@
                     <h1>ARAŞTIRMA VE DİĞER DERSLER ÖNEMLİ DUYURU OLACAĞINDAN NELER OLUP BİTTİĞİ İLE İLGİLİ</h1>
                     <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
                 </div>
+            </div>   
+
+            <div class="card">
+                <div class="photo-date">
+                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
+                    <div class="date">
+                        <div class="day">07</div>
+                        <div class="month">ŞBT</div>
+                        <div class="year">2020</div>
+                    </div>
+                </div>
+
+                <div class="head-content">
+                    <h1>ARAŞTIRMA VE DİĞER DERSLER ÖNEMLİ DUYURU OLACAĞINDAN NELER OLUP BİTTİĞİ İLE İLGİLİ</h1>
+                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
+                </div>
+            </div>   
+
+            <div class="card">
+                <div class="photo-date">
+                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
+                    <div class="date">
+                        <div class="day">07</div>
+                        <div class="month">ŞBT</div>
+                        <div class="year">2020</div>
+                    </div>
+                </div>
+
+                <div class="head-content">
+                    <h1>ARAŞTIRMA VE DİĞER DERSLER ÖNEMLİ DUYURU OLACAĞINDAN NELER OLUP BİTTİĞİ İLE İLGİLİ</h1>
+                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
+                </div>
+            </div>   
+
+            <div class="card">
+                <div class="photo-date">
+                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
+                    <div class="date">
+                        <div class="day">07</div>
+                        <div class="month">ŞBT</div>
+                        <div class="year">2020</div>
+                    </div>
+                </div>
+
+                <div class="head-content">
+                    <h1>ARAŞTIRMA VE DİĞER DERSLER ÖNEMLİ DUYURU OLACAĞINDAN NELER OLUP BİTTİĞİ İLE İLGİLİ</h1>
+                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
+                </div>
             </div>    
 
             <div class="card">
@@ -210,9 +258,9 @@
                     .date {
                         width: 40px;
                         height: 65.3px;
-                        margin: 5px;
-                        margin-left: 5px;  
-                        padding-top: 5px;
+                        margin-left: 5px;
+                        margin-top: 5px;  
+                        padding-top: 2px;
                         background: rgba(196, 196, 196, 0.13);
                         color: #939393;                          
                         text-align: center;
@@ -259,6 +307,7 @@
                     overflow: hidden;
                     font-size: 17px;
                     color: $title-color;
+
                 } 
             }       
         }        

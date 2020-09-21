@@ -3,9 +3,9 @@
         <img src="@/assets/logo.svg" alt="kampusDuy Logo">
 
         <div class="settings">
-            <div class="notification-alert"></div>
-            <img @click="isOpenNotification = !isOpenNotification, isOpenSetting = false" class="settings-icon bell-icon" src="@/assets/bell.svg" alt="bell">
-            <img @click="isOpenSetting = !isOpenSetting, isOpenNotification = false" class="settings-icon setting-icon" src="@/assets/settings.svg" alt="bell">
+            <div v-if="isAlert" class="notification-alert"></div>
+            <img @click="isOpenNotification = !isOpenNotification, isOpenSetting = false" class="settings-icon" src="@/assets/bell.svg" alt="bell">
+            <img @click="isOpenSetting = !isOpenSetting, isOpenNotification = false" class="settings-icon" src="@/assets/settings.svg" alt="bell">
             <div v-if="isOpenNotification" class="notification-card">
                 <ul>
                     <li>Yeni görev atandı</li>
@@ -31,6 +31,7 @@ export default {
         return {
             isOpenNotification : false,
             isOpenSetting : false,
+            isAlert : true
         }
     }
 }
@@ -50,13 +51,13 @@ export default {
         position: relative;
 
         .notification-alert {
-            width: 12px;
-            height: 12px;
+            width: 14px;
+            height: 14px;
             background-color: orangered;
             border: 2px solid #F5F6F8;
             border-radius: 50%;
             position: absolute;
-            left: 35px;
+            left: 33px;
         }
         .settings-icon {
             padding-left: 20px;
@@ -74,6 +75,8 @@ export default {
             position: absolute;
             right: 40px;
             padding: 30px;  //değişecek
+            cursor: pointer;
+            border: 1px solid gray;
         }
     }    
 }   
