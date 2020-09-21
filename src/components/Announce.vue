@@ -173,13 +173,12 @@
 </template>
 
 <style lang="scss" scoped>
+@import '@/main.scss';
+
     .announces {
         display: flex;
 
         .school-announce {
-            // height: 850px;
-            font-family: Roboto;
-            // overflow: scroll;
 
             .card {
                 width: 470px;
@@ -188,14 +187,14 @@
                 border-radius: 10px;
                 margin-bottom: 10px;
                 margin-right: 10px;
-                background-color: #F5F5FF;
+                background-color: $main-color;
                 transition: 500ms all;
                 border-bottom: 1px solid gainsboro;
                 cursor: pointer;
 
                 &:hover {
                     filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.5));
-                    background-color: #fff;
+                    background-color: rgb(235, 235, 235);
                 }
 
                 .photo-date {
@@ -211,6 +210,7 @@
                     .date {
                         width: 40px;
                         height: 65.3px;
+                        margin: 5px;
                         margin-left: 5px;  
                         padding-top: 5px;
                         background: rgba(196, 196, 196, 0.13);
@@ -246,7 +246,7 @@
                     overflow: hidden; 
                     font-size: 18px;
                     line-height: 18px;
-                    color: #5D5DAF;
+                    color: $text-color;
                     margin-bottom: 15px;
                 }
 
@@ -258,6 +258,7 @@
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                     font-size: 17px;
+                    color: $title-color;
                 } 
             }       
         }        

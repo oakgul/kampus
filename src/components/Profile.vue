@@ -22,6 +22,7 @@
 </template>
 
 <style lang="scss" scoped>
+@import '@/main.scss';
 
 .profile {
     display: flex;
@@ -29,9 +30,8 @@
     align-items: center;
     min-width: 350px;
     height: calc(100vh - 66px);
-    background: #F5F5FF;
+    background: $main-color;
     border-top-left-radius: 56px;
-    font-family: Roboto;
 
 
     .dashboard-image {
@@ -44,17 +44,20 @@
     .user-name {
         font-size: 20px;
         margin-top: 10px;
+        color: $title-color;
     }
 
     .department {
         margin-top: 5px;
         margin-bottom: 150px;
+        color: $title-color-gray;
+
     }
 
     .sidebar-buttons {
         width: 260px;
         height: 80px;
-        background-color: #E3E3FC;
+        background-color: #ACB1CA;
         text-align: center;
         line-height: 80px;
         margin-bottom: 20px;
