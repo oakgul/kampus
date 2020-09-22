@@ -4,9 +4,25 @@
 
             <div class="card">
                 <div class="photo-date">
-                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
+                    <img class="card-image" src="@/assets/elif.jpg" alt="profile">
                     <div class="date">
-                        <div class="day">07</div>
+                        <div class="day">10</div>
+                        <div class="month">ŞBT</div>
+                        <div class="year">2020</div>
+                    </div>
+                </div>
+
+                <div class="head-content">
+                    <h1>ARAŞTIRMA VE DİĞER DERSLER ÖNEMLİ DUYURU OLACAĞINDAN NELER OLUP BİTTİĞİ İLE İLGİLİ</h1>
+                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
+                </div>
+            </div>   
+
+            <div class="card">
+                <div class="photo-date">
+                    <img class="card-image" src="@/assets/elif2.jpg" alt="profile">
+                    <div class="date">
+                        <div class="day">08</div>
                         <div class="month">ŞBT</div>
                         <div class="year">2020</div>
                     </div>
@@ -22,8 +38,8 @@
                 <div class="photo-date">
                     <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
-                        <div class="day">07</div>
-                        <div class="month">ŞBT</div>
+                        <div class="day">30</div>
+                        <div class="month">OCK</div>
                         <div class="year">2020</div>
                     </div>
                 </div>
@@ -38,24 +54,8 @@
                 <div class="photo-date">
                     <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
-                        <div class="day">07</div>
-                        <div class="month">ŞBT</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>ARAŞTIRMA VE DİĞER DERSLER ÖNEMLİ DUYURU OLACAĞINDAN NELER OLUP BİTTİĞİ İLE İLGİLİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
-                </div>
-            </div>   
-
-            <div class="card">
-                <div class="photo-date">
-                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">07</div>
-                        <div class="month">ŞBT</div>
+                        <div class="day">27</div>
+                        <div class="month">OCK</div>
                         <div class="year">2020</div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                 <div class="photo-date">
                     <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
-                        <div class="day">15</div>
+                        <div class="day">18</div>
                         <div class="month">OCK</div>
                         <div class="year">2020</div>
                     </div>
@@ -86,8 +86,8 @@
                 <div class="photo-date">
                     <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
-                        <div class="day">15</div>
-                        <div class="month">EYL</div>
+                        <div class="day">22</div>
+                        <div class="month">ALK</div>
                         <div class="year">2020</div>
                     </div>
                 </div>
@@ -121,10 +121,42 @@
 
             <div class="card">
                 <div class="photo-date">
-                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
+                    <img class="card-image" src="@/assets/baris.jpg" alt="profile">
                     <div class="date">
-                        <div class="day">20</div>
+                        <div class="day">18</div>
                         <div class="month">TEM</div>
+                        <div class="year">2020</div>
+                    </div>
+                </div>
+
+                <div class="head-content">
+                    <h1>OKUL AÇILIŞ PARTİSİ VE KATILIMCI LİSTESİ YAYINLANDI</h1>
+                    <p>Yarın sabah açılış konuşmasından sonra hep birlikte okulun spor salonunda buluşuyoruz, ordan sahilde bulunan cadde pub'a geçeceğiz..</p>
+                </div>
+            </div>   
+
+            <div class="card">
+                <div class="photo-date">
+                    <img class="card-image" src="@/assets/cinar.jpg" alt="profile">
+                    <div class="date">
+                        <div class="day">16</div>
+                        <div class="month">TEM</div>
+                        <div class="year">2020</div>
+                    </div>
+                </div>
+
+                <div class="head-content">
+                    <h1>SUNUCU DERSİ İPTAL EDİLDİ VE SINAV TARİHLERİ BİR SONRAKİ TARİHE ERTELENDİ</h1>
+                    <p>Yarınki sunucu dersi yoğun yağmur sebebiyle iptal edilmiştir, telafi dersi tarihi buradan duyurulacaktır.</p>
+                </div>
+            </div>   
+
+            <div class="card">
+                <div class="photo-date">
+                    <img class="card-image" src="@/assets/elif3.jpg" alt="profile">
+                    <div class="date">
+                        <div class="day">22</div>
+                        <div class="month">HAZ</div>
                         <div class="year">2020</div>
                     </div>
                 </div>
@@ -137,49 +169,17 @@
 
             <div class="card">
                 <div class="photo-date">
-                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
+                    <img class="card-image" src="@/assets/elif4.jpg" alt="profile">
                     <div class="date">
-                        <div class="day">20</div>
-                        <div class="month">TEM</div>
+                        <div class="day">05</div>
+                        <div class="month">HAZ</div>
                         <div class="year">2020</div>
                     </div>
                 </div>
 
                 <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı konusunda ne olduğunu bizde hala bilmiyoruz</p>
-                </div>
-            </div>   
-
-            <div class="card">
-                <div class="photo-date">
-                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">20</div>
-                        <div class="month">TEM</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı konusunda ne olduğunu bizde hala bilmiyoruz</p>
-                </div>
-            </div>   
-
-            <div class="card">
-                <div class="photo-date">
-                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">20</div>
-                        <div class="month">TEM</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı konusunda ne olduğunu bizde hala bilmiyoruz</p>
+                    <h1>AYDIN GEZİSİ VE ENGELLİ ARKADAŞLARIMIZ İÇİN BAĞIŞ GECESİ HAKKINDA SON BİLGİLER</h1>
+                    <p>Yarınki Aydın gezisi için son 6 kişilik yer var. Gitmek isteyen arkadaşlar lütfen Hülya arkadaşımıza ismini yazdırsın. Gezi ücreti 80 TL'dir.</p>
                 </div>
             </div>   
 

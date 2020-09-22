@@ -19,8 +19,20 @@
             <span>SORU SOR</span>
         </div>
 
+        <InfoCard class="info-card"/>
+
     </div>
 </template>
+
+<script>
+import InfoCard from '@/components/InfoCard';
+
+export default {
+    components : {
+        InfoCard
+    }
+}
+</script>
 
 <style lang="scss" scoped>
 @import '@/main.scss';
@@ -92,6 +104,11 @@
             left: 20px;
             top: 20px;
         }
+    }
+
+    .info-card {
+        position: absolute;
+        bottom: 8px;
     }
 }
 

@@ -68,8 +68,8 @@ export default {
         }
 
         .notification-card {
-            width: 200px;
-            height: 250px;
+            width: 270px;
+            height: 300px;
             background-color:#E9ECF1;
             border-radius: 8px;
             position: absolute;
