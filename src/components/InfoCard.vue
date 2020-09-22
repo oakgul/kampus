@@ -1,7 +1,7 @@
 <template>
     <div class="infoCard">
         <div class="illustration">
-            <img src="@/assets/olive.svg" alt="info illustration">
+            <InfoCardImg class="info-card-img"/>
         </div>
         <div class="content">
             <h4>Yeni Özellik</h4>
@@ -11,6 +11,16 @@
         </div>
     </div>
 </template>
+
+<script>
+import InfoCardImg from '@/components/icons/InfoCardImg';
+
+export default {
+    components : {
+        InfoCardImg,
+    }
+}
+</script>
 
 <style lang="scss" scoped>
 @import '@/main.scss';

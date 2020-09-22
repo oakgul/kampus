@@ -4,8 +4,14 @@
 
         <div class="settings">
             <div v-if="isAlert" class="notification-alert"></div>
-            <img @click="isOpenNotification = !isOpenNotification, isOpenSetting = false" class="settings-icon" src="@/assets/bell.svg" alt="bell">
-            <img @click="isOpenSetting = !isOpenSetting, isOpenNotification = false" class="settings-icon" src="@/assets/settings.svg" alt="bell">
+            <button @click="isOpenNotification = !isOpenNotification, isOpenSetting = false">
+                <Bell class="settings-icon" />
+            </button>
+
+            <button @click="isOpenSetting = !isOpenSetting, isOpenNotification = false">
+                <Setting class="settings-icon" />
+            </button>            
+            
             <div v-if="isOpenNotification" class="notification-card">
                 <ul>
                     <li>Yeni görev atandı</li>
@@ -26,6 +32,9 @@
 </template>
 
 <script>
+import Bell from '@/components/icons/Bell';
+import Setting from '@/components/icons/Setting';
+
 export default {
     data() {
         return {
@@ -33,13 +42,17 @@ export default {
             isOpenSetting : false,
             isAlert : true
         }
+    },
+
+    components : {
+        Bell,
+        Setting,
     }
 }
 </script>
 
 <style lang="scss" scoped>
 @import '@/main.scss';
-
 
 .dashboard-header {
     height: 66px;
@@ -49,6 +62,10 @@ export default {
 
     .settings {
         position: relative;
+
+        button {
+            background: none;
+        }
 
         .notification-alert {
             width: 14px;
@@ -60,6 +77,8 @@ export default {
             left: 33px;
         }
         .settings-icon {
+            width: 50px;
+            height: 30px;
             padding-left: 20px;
 
             &:hover {

@@ -7,15 +7,15 @@
         <div class="department">Bilgisayar Mühendisliği</div>
 
         <div class="sidebar-buttons">
-            <img class="sidebar-icons" src="@/assets/plus-square.svg" alt="announce">
+            <Bell class="sidebar-icons" />
             <span>DUYURU YAP</span>
         </div>
         <div class="sidebar-buttons">
-            <img class="sidebar-icons" src="@/assets/file-text.svg" alt="announce">
+            <FileText class="sidebar-icons" />
             <span>DERS NOTLARI</span>
         </div>
         <div class="sidebar-buttons">
-            <img class="sidebar-icons" src="@/assets/help-circle.svg" alt="announce">
+            <Question class="sidebar-icons" />
             <span>SORU SOR</span>
         </div>
 
@@ -26,10 +26,16 @@
 
 <script>
 import InfoCard from '@/components/InfoCard';
+import Bell from '@/components/icons/Bell';
+import FileText from '@/components/icons/FileText';
+import Question from '@/components/icons/Question';
 
 export default {
     components : {
-        InfoCard
+        InfoCard,
+        Bell,
+        FileText,
+        Question
     }
 }
 </script>
@@ -103,6 +109,7 @@ export default {
             position: absolute;
             left: 20px;
             top: 20px;
+            stroke: black;
         }
     }
 
