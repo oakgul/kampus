@@ -4,7 +4,7 @@
 
             <div class="card">
                 <div class="photo-date">
-                    <img class="card-image" src="@/assets/elif.jpg" alt="profile">
+                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
                         <div class="day">10</div>
                         <div class="month">ŞBT</div>
@@ -20,7 +20,7 @@
 
             <div class="card">
                 <div class="photo-date">
-                    <img class="card-image" src="@/assets/elif2.jpg" alt="profile">
+                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
                         <div class="day">08</div>
                         <div class="month">ŞBT</div>
@@ -121,7 +121,7 @@
 
             <div class="card">
                 <div class="photo-date">
-                    <img class="card-image" src="@/assets/baris.jpg" alt="profile">
+                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
                         <div class="day">18</div>
                         <div class="month">TEM</div>
@@ -137,7 +137,7 @@
 
             <div class="card">
                 <div class="photo-date">
-                    <img class="card-image" src="@/assets/cinar.jpg" alt="profile">
+                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
                         <div class="day">16</div>
                         <div class="month">TEM</div>
@@ -153,7 +153,7 @@
 
             <div class="card">
                 <div class="photo-date">
-                    <img class="card-image" src="@/assets/elif3.jpg" alt="profile">
+                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
                         <div class="day">22</div>
                         <div class="month">HAZ</div>
@@ -169,7 +169,7 @@
 
             <div class="card">
                 <div class="photo-date">
-                    <img class="card-image" src="@/assets/elif4.jpg" alt="profile">
+                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
                         <div class="day">05</div>
                         <div class="month">HAZ</div>

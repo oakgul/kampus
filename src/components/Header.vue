@@ -18,7 +18,7 @@
 
     .header-container {
         width: 100%;
-        background: white;
+        /* background: white; */
         /* border-bottom: 1px solid #e8e8e8;
         box-shadow: 0 1px 1px 0 rgba(0,0,0,.05); */
     }

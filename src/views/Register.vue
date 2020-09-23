@@ -17,13 +17,13 @@
                     <option value="diğer">Diğer</option>
                 </select><br>
                 <select>
-                    <option selected value="bilgisayar">Bilgisayar Mühendisliği</option>
-                    <option value="kimya">Kimya Mühendisliği</option>
-                    <option value="biyoloji">Biyoloji Mühendisliği</option>
+                    <option selected value="Bilgisayar Programcılığı">Bilgisayar Mühendisliği</option>
+                    <option value="Kimya Teknolojileri">Kimya Mühendisliği</option>
+                    <option value="Tıbbi Aromatik Bitkiler">Biyoloji Mühendisliği</option>
                 </select><br>
                 <select>
-                    <option selected value="öğrenci">Öğrenci</option>
-                    <option value="akademisyen">Akademisyen</option>
+                    <option selected value="student">Öğrenci</option>
+                    <option value="teacher">Akademisyen</option>
                 </select><br>
 
                 <button>Kayıt Ol</button>
@@ -34,7 +34,7 @@
 </template>
 
 <script>
-    import Header from '@/components/Header';
+import Header from '@/components/Header';
 
 export default {
     components : {

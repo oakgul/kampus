@@ -15,8 +15,12 @@
             <div v-if="isOpenNotification" class="notification-card">
                 <ul>
                     <li>Yeni görev atandı</li>
-                    <li>akgül</li>
-                    <li>akgül</li>
+                    <li>Yeni görev atandı</li>
+                    <li>Yeni görev atandı</li>
+                    <li>Yeni görev atandı</li>
+                    <li>Yeni görev atandı</li>
+                    <li>Yeni görev atandı</li>
+                    <li>Yeni görev atandı</li>
                 </ul>
             </div>
 
