@@ -22,9 +22,9 @@
 
             <div v-if="isOpenSetting" class="notification-card">
                 <ul>
-                    <li>genel Ayarlar</li>
-                    <li>profil ayarları</li>
-                    <li>çıkış</li>
+                    <li>Profil Ayarları</li>
+                    
+                    <li>Çıkış</li>
                 </ul>
             </div>
         </div>

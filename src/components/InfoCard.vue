@@ -31,12 +31,16 @@ export default {
         border: 1px solid gainsboro;
         border-radius: 8px;
         padding: 10px;
+        background: $logo-color ;
+        // background: $green-color;
 
         .content {
             margin: 7px;
 
+
             p {
             font-size: 15px;
+            padding-top: 5px;
             }
         }   
     }
