@@ -97,9 +97,23 @@ export default {
             border-radius: 8px;
             position: absolute;
             right: 40px;
-            padding: 30px;  //değişecek
             cursor: pointer;
-            border: 1px solid gray;
+            filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.5));
+            overflow: auto;
+            padding: 20px 0;
+
+            li {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 40px;
+                margin-bottom: 5px;
+                padding: 20px;
+
+                &:hover {
+                    background: white;
+                }
+            }
         }
     }    
 }   

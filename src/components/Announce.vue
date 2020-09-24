@@ -227,6 +227,8 @@
         display: flex;
 
         .school-announce {
+            overflow: auto;
+            max-height: 800px;
 
             .card {
                 width: 470px;
