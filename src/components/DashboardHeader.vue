@@ -58,6 +58,8 @@ export default {
 <style lang="scss" scoped>
 @import '@/main.scss';
 
+
+
 .dashboard-header {
     height: 66px;
     display: flex;
@@ -102,6 +104,7 @@ export default {
             overflow: auto;
             padding: 20px 0;
 
+            
             li {
                 display: flex;
                 align-items: center;
@@ -114,6 +117,8 @@ export default {
                     background: white;
                 }
             }
+
+            
         }
     }    
 }   

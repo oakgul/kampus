@@ -101,7 +101,7 @@
 
         <!-- --------------------------------------------------- -->
 
-        <div class="school-announce">
+        <div class="school-announce right-announce">
 
             <div class="card">
                 <div class="photo-date">
@@ -167,7 +167,7 @@
                 </div>
             </div>   
 
-            <div class="card">
+            <!-- <div class="card">
                 <div class="photo-date">
                     <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
@@ -212,7 +212,7 @@
                     <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
                     <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı konusunda ne olduğunu bizde hala bilmiyoruz</p>
                 </div>
-            </div>  
+            </div>   -->
 
             
             
@@ -228,7 +228,9 @@
 
         .school-announce {
             overflow: auto;
-            max-height: 800px;
+            height: calc(100vh - 66px);
+            
+
 
             .card {
                 width: 470px;
@@ -312,7 +314,11 @@
 
                 } 
             }       
-        }        
+        }
+        
+        .right-announce {
+            margin-left: 10px;
+        }
     }
 
 </style>
