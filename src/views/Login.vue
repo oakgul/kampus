@@ -6,11 +6,12 @@
             <img src="@/assets/register.svg" alt="register">
         </div>
         <div class="register-form">
-            <form>
-                <input required type="email" placeholder="E-posta"><br>
-                <input required type="password" placeholder="Parola"><br>      
-                <button>Giriş</button>
-            </form>
+            <!-- bu div'i form yap e.prevent default yap -->
+            <div>
+                <input v-model="user.email" required type="email" placeholder="E-posta"><br>
+                <input v-model="user.password" required type="password" placeholder="Parola"><br>      
+                <button @click="userLogin">Giriş</button>
+            </div>
         </div>
     </div>
     </div>
@@ -20,8 +21,40 @@
     import Header from '@/components/Header';
 
 export default {
+    data() {
+        return {
+            token : '',
+            user : {
+                email : '',
+                password : ''
+            }
+        }
+    },
+
     components : {
         Header,
+    },
+
+    methods : {
+        userLogin() {
+            fetch('https://kampus-api.herokuapp.com/api/auth/login', {
+            method : 'POST',
+            body : JSON.stringify({
+                    email : this.user.email,
+                password : this.user.password       
+            }),
+            headers: {
+                'Content-type' : 'application/json; charset=UTF-8'
+            }
+        })
+        .then(data => data.json())
+        .then(result => {
+            console.log(result);
+            this.token = result.access_token;
+             console.log(`Access Token : ${this.token}`);
+        })
+        .catch(err => console.log(err))    
+        }
     }
 }
 </script>
