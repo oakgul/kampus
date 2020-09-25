@@ -14,14 +14,10 @@
     </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '@/main.scss';
 
-    .header-container {
-        width: 100%;
-        /* background: white; */
-        /* border-bottom: 1px solid #e8e8e8;
-        box-shadow: 0 1px 1px 0 rgba(0,0,0,.05); */
-    }
+.header-container {
 
     .header {
         max-width: 1366px;
@@ -32,17 +28,19 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-    }
 
-    .nav-items {
-        font-family: Asap;
-        font-size: 18px;
-        color: #525f7f;
-        margin-left: 80px;
-    }
+        .nav {
+            .nav-items {
+                font-size: 18px;
+                color: #525f7f;
+                margin-left: 80px;
 
-    .nav-items:hover {
-        color: #FFD037;
+                &:hover {
+                    color: #FFD037;
+                }
+            } 
+        }
     }
+}    
 
 </style>
