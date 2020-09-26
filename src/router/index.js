@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
+import store from '../store';
+
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Register from '../views/Register.vue'
@@ -32,7 +35,15 @@ const routes = [
   {
     path: '/dashboard',
     name: 'Dashboard',
-    component: Dashboard
+    component: Dashboard,
+    beforeEnter(to, from, next) {
+      if(store.getters.isHaveToken) {
+        next()
+      }else{
+        next("/login")
+      }
+    }
+
   },
   // {
   //   path: '/about',

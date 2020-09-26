@@ -23,7 +23,6 @@
 export default {
     data() {
         return {
-            token : '',
             user : {
                 email : '',
                 password : ''
@@ -38,6 +37,7 @@ export default {
     methods : {
         userLogin() {
             this.$store.dispatch("login", {...this.user})
+            .then(res => this.$router.push("/dashboard"))
         }
     }
 }

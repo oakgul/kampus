@@ -7,8 +7,13 @@ export default new Vuex.Store({
   state: {
     token : ""
   },
+
   getters: {
+    isHaveToken(state) {
+      return state.token !== ""
+    }
   },
+
   mutations: {
     setToken(state, token) {
       state.token = token
@@ -18,6 +23,7 @@ export default new Vuex.Store({
 
     },
   },
+
   actions: {
     register({commit}, payload) {
       fetch('https://kampus-api.herokuapp.com/api/auth/register', {
@@ -43,9 +49,10 @@ export default new Vuex.Store({
 
     // LOGIN
     login({commit}, payload) {
-      fetch('https://kampus-api.herokuapp.com/api/auth/login', {
+      return fetch('https://kampus-api.herokuapp.com/api/auth/login', {
         method : 'POST',
         body : JSON.stringify({
+
           email : payload.email,
           password : payload.password     
         }),
