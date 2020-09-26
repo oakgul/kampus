@@ -37,23 +37,7 @@ export default {
 
     methods : {
         userLogin() {
-            fetch('https://kampus-api.herokuapp.com/api/auth/login', {
-            method : 'POST',
-            body : JSON.stringify({
-                    email : this.user.email,
-                password : this.user.password       
-            }),
-            headers: {
-                'Content-type' : 'application/json; charset=UTF-8'
-            }
-        })
-        .then(data => data.json())
-        .then(result => {
-            console.log(result);
-            this.token = result.access_token;
-             console.log(`Access Token : ${this.token}`);
-        })
-        .catch(err => console.log(err))    
+            this.$store.dispatch("login", {...this.user})
         }
     }
 }

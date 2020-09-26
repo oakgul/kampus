@@ -26,7 +26,7 @@
                     <option value="admin">Akademisyen</option>
                 </select><br>
 
-                <button @click="saveUser">Kayıt Ol</button>
+                <button @click="userRegister">Kayıt Ol</button>
             </div>
         </div>
     </div>
@@ -52,27 +52,9 @@ export default {
     },
 
     methods : {
-        saveUser() {
-        fetch('https://kampus-api.herokuapp.com/api/auth/register', {
-        method : 'POST',
-        body : JSON.stringify({
-          
-            name : this.user.name,
-            surname : this.user.surname,
-            email : this.user.email,
-            password : this.user.password,
-            gender : this.user.gender,
-            department : this.user.department,
-            role : this.user.role,
-        }),
-        headers: {
-            'Content-type' : 'application/json; charset=UTF-8'
-        }
-    })
-    .then(data => data.json())
-    .then(result => console.log(result))
-    .catch(err => console.log(err))
-    },
+        userRegister() {
+            this.$store.dispatch("register", {...this.user})
+        },
     },    
 
     components : {
