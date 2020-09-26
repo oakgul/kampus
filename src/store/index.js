@@ -20,7 +20,7 @@ export default new Vuex.Store({
     },
 
     clearToken(state) {
-
+      state.token = ""
     },
   },
 
@@ -67,6 +67,22 @@ export default new Vuex.Store({
           console.log(result.access_token);
         })
         .catch(err => console.log(err)) 
+    },
+
+    // LOGOUT
+    logout({commit, state}) {
+        fetch('https://kampus-api.herokuapp.com/api/auth/logout', {
+            method : 'GET',
+            headers: {
+        'Content-type' : 'application/json; charset=UTF-8',
+        'Authorization': 'Bearer: ' + state.token,
+        },
+    })
+    .then(data => data.json())
+    .then(result => console.log(result))
+    .catch(err => console.log(err))   
+    commit("clearToken")
+    
     }
   }
 })

@@ -28,7 +28,7 @@
                 <ul>
                     <li>Profil Ayarları</li>
                     
-                    <li>Çıkış</li>
+                    <li><a @click="logout">Çıkış</a></li>
                 </ul>
             </div>
         </div>
@@ -45,6 +45,13 @@ export default {
             isOpenNotification : false,
             isOpenSetting : false,
             isAlert : true
+        }
+    },
+
+    methods : {
+        logout() {
+            this.$store.dispatch("logout")
+            this.$router.replace('/')
         }
     },
 
