@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import router from '../router'
 
 Vue.use(Vuex)
 
@@ -25,6 +26,17 @@ export default new Vuex.Store({
   },
 
   actions: {
+    initAuth({commit, dispatch}) {
+      let token = localStorage.getItem('token');
+      if(token) {
+        commit("setToken", token)
+        router.push('/dashboard')
+      }else{
+        router.push('/login')
+        return false
+      }
+    },  
+
     register({commit}, payload) {
       fetch('https://kampus-api.herokuapp.com/api/auth/register', {
         method : 'POST',
@@ -64,6 +76,7 @@ export default new Vuex.Store({
         .then(result => {
           console.log(result);
           commit("setToken", result.access_token)
+          localStorage.setItem('token', result.access_token)
           console.log(result.access_token);
         })
         .catch(err => console.log(err)) 
@@ -82,6 +95,7 @@ export default new Vuex.Store({
     .then(result => console.log(result))
     .catch(err => console.log(err))   
     commit("clearToken")
+    localStorage.removeItem('token')
     
     }
   }

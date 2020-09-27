@@ -6,7 +6,7 @@
         <div class="user-name">Orhan Akgül</div>    
         <div class="department">Bilgisayar Mühendisliği</div>
 
-        <div class="sidebar-buttons">
+        <div @click="gonder" class="sidebar-buttons">
             <Bell class="sidebar-icons" />
             <span>DUYURU YAP</span>
         </div>
@@ -31,6 +31,12 @@ import FileText from '@/components/icons/FileText';
 import Question from '@/components/icons/Question';
 
 export default {
+    methods : {
+        gonder() {
+            this.$router.push('/')
+        }
+    },
+
     components : {
         InfoCard,
         Bell,
