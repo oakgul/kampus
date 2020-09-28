@@ -54,6 +54,7 @@ export default {
     methods : {
         userRegister() {
             this.$store.dispatch("register", {...this.user})
+            .then(res => this.$router.push("/login"))
         },
     },    
 

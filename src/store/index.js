@@ -38,7 +38,7 @@ export default new Vuex.Store({
     },  
 
     register({commit}, payload) {
-      fetch('https://kampus-api.herokuapp.com/api/auth/register', {
+      return fetch('https://kampus-api.herokuapp.com/api/auth/register', {
         method : 'POST',
         body : JSON.stringify({
           
