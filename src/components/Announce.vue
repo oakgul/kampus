@@ -18,7 +18,7 @@
                 </div>
             </div>   
 
-            <div class="card">
+            <!-- <div class="card">
                 <div class="photo-date">
                     <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
@@ -96,7 +96,7 @@
                     <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
                     <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı...</p>
                 </div>
-            </div>       
+            </div>        -->
         </div>
 
         <!-- --------------------------------------------------- -->
@@ -114,12 +114,13 @@
                 </div>
 
                 <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
+                    <!-- <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1> -->
+                    <h1> {{ baslik }} </h1>
                     <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı konusunda ne olduğunu bizde hala bilmiyoruz</p>
                 </div>
             </div>  
 
-            <div class="card">
+            <!-- <div class="card">
                 <div class="photo-date">
                     <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
@@ -167,7 +168,7 @@
                 </div>
             </div>   
 
-            <!-- <div class="card">
+            <div class="card">
                 <div class="photo-date">
                     <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
@@ -219,6 +220,20 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            baslik : 'PANDEMİ DUYURUSU'
+        }
+    },
+
+    created() {
+        this.$store.dispatch("getAnnounce")
+    }
+}
+</script>
 
 <style lang="scss" scoped>
 @import '@/main.scss';

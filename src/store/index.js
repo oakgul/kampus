@@ -6,7 +6,15 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    token : ""
+    token : "",
+    announce : {
+      userID : [],
+      title : [],
+      content : [],
+      date : [],
+      slug : [],
+      id :[]
+    }
   },
 
   getters: {
@@ -22,6 +30,21 @@ export default new Vuex.Store({
 
     clearToken(state) {
       state.token = ""
+    },
+
+    setAnnounce(state, announces) {
+      console.log(announces);
+      announces.map(res => {
+        state.announce.userID.push(res.user)
+        state.announce.title.push(res.title)
+        state.announce.content.push(res.content)
+        state.announce.date.push(res.createdAt)
+        state.announce.slug.push(res.slug)
+        state.announce.id.push(res.id)   
+      })
+      console.log(state.announce.userID);
+      console.log(state.announce.title);
+      console.log(state.announce.content);
     },
   },
 
@@ -97,6 +120,22 @@ export default new Vuex.Store({
     commit("clearToken")
     localStorage.removeItem('token')
     
-    }
+    },
+
+    // GET ALL ANNOUNCE
+    getAnnounce({commit, state}) {
+      fetch('https://kampus-api.herokuapp.com/api/announce', {
+            method : 'GET',
+            headers: {
+                'Content-type' : 'application/json; charset=UTF-8',
+                'Authorization': 'Bearer: ' + state.token,
+                }
+            })
+        .then(data => data.json())
+        .then(result => {
+          commit("setAnnounce", result.data)
+        })
+        .catch(err => console.log(err))
+    },
   }
 })
