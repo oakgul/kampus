@@ -7,12 +7,12 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     token : "",
-    announce : {
+    announces : {
       userID : [],
       title : [],
       content : [],
       date : [],
-      slug : [],
+      // slug : [],
       id :[]
     }
   },
@@ -35,16 +35,16 @@ export default new Vuex.Store({
     setAnnounce(state, announces) {
       console.log(announces);
       announces.map(res => {
-        state.announce.userID.push(res.user)
-        state.announce.title.push(res.title)
-        state.announce.content.push(res.content)
-        state.announce.date.push(res.createdAt)
-        state.announce.slug.push(res.slug)
-        state.announce.id.push(res.id)   
+        state.announces.userID.push(res.user)
+        state.announces.title.push(res.title)
+        state.announces.content.push(res.content)
+        state.announces.date.push(res.createdAt)
+        // state.announces.slug.push(res.slug)
+        state.announces.id.push(res.id)   
       })
-      console.log(state.announce.userID);
-      console.log(state.announce.title);
-      console.log(state.announce.content);
+      // console.log(state.announces.userID);
+      // console.log(state.announces.title);
+      // console.log(state.announces.content);
     },
   },
 
