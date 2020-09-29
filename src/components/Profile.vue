@@ -6,7 +6,7 @@
         <div class="user-name">Orhan Akgül</div>    
         <div class="department">Bilgisayar Mühendisliği</div>
 
-        <div @click="gonder" class="sidebar-buttons">
+        <div @click="shareAnnouncePage" class="sidebar-buttons">
             <Bell class="sidebar-icons" />
             <span>DUYURU YAP</span>
         </div>
@@ -32,8 +32,8 @@ import Question from '@/components/icons/Question';
 
 export default {
     methods : {
-        gonder() {
-            this.$router.push('/')
+        shareAnnouncePage() {
+            this.$router.push('/shareannounce')
         }
     },
 

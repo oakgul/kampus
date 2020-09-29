@@ -7,14 +7,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     token : "",
-    announces : {
-      userID : [],
-      title : [],
-      content : [],
-      date : [],
-      // slug : [],
-      id :[]
-    }
+    announces : [],  
   },
 
   getters: {
@@ -34,17 +27,10 @@ export default new Vuex.Store({
 
     setAnnounce(state, announces) {
       console.log(announces);
+      
       announces.map(res => {
-        state.announces.userID.push(res.user)
-        state.announces.title.push(res.title)
-        state.announces.content.push(res.content)
-        state.announces.date.push(res.createdAt)
-        // state.announces.slug.push(res.slug)
-        state.announces.id.push(res.id)   
-      })
-      // console.log(state.announces.userID);
-      // console.log(state.announces.title);
-      // console.log(state.announces.content);
+        state.announces.push(res)
+      })      
     },
   },
 
@@ -120,6 +106,25 @@ export default new Vuex.Store({
     commit("clearToken")
     localStorage.removeItem('token')
     
+    },
+
+    // SHARE ANNOUNCE
+    shareAnnounce({commit, state}, payload) {
+      return fetch('https://kampus-api.herokuapp.com/api/announce/share', {
+        method : 'POST',
+        body : JSON.stringify({
+
+          title : payload.title,
+          content : payload.content     
+        }),
+        headers: {
+          'Content-type' : 'application/json; charset=UTF-8',
+          'Authorization': 'Bearer: ' + state.token,
+        }
+        })
+        .then(data => data.json())
+        .then(result => console.log(result))
+        .catch(err => console.log(err)) 
     },
 
     // GET ALL ANNOUNCE

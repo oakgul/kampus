@@ -1,8 +1,9 @@
 <template>
     <div class="announces">
+        <p v-if="isLoadAnnounce">Loading...</p>
         <div class="school-announce">
 
-            <!-- <div :key="announce.id" class="card" v-for="announce in getAllAnnounce">
+            <div :key="announce._id" class="card" v-for="announce in getAllAnnounce">
                 <div class="photo-date">
                     <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
@@ -13,37 +14,12 @@
                 </div>
 
                 <div class="head-content">
-                    <h1> {{ announce  }} </h1>
-                    <p> {{  announce}} </p>
+                    <h1> {{ announce.title }} </h1>
+                    <p> {{  announce.content }} </p>
+                    <!-- <p> {{  announce.user }} </p> -->
+                    <!-- <p> {{  announce._id }} </p> -->
                 </div>
-            </div>    -->
-
-            <!-- <div :key="announce.id" class="card" v-for="announce in getAllAnnounce">
-                <div v-for="item in announce"> {{ item }} </div>                    
-                   
-            </div>    -->
-
-
-            <p>{{getAllAnnounce.title[0]}}</p>
-            <p>{{getAllAnnounce.content[0]}}</p>
-            <p>{{getAllAnnounce.date[0]}}</p>
-            <p>{{getAllAnnounce.userID[0]}}</p>
-            <p>{{getAllAnnounce.id[0]}}</p> 
-            <br>
-            <p>{{getAllAnnounce.title[1]}}</p>
-            <p>{{getAllAnnounce.content[1]}}</p>
-            <p>{{getAllAnnounce.date[1]}}</p>
-            <p>{{getAllAnnounce.userID[1]}}</p>
-            <p>{{getAllAnnounce.id[1]}}</p>
-            <br>
-            <p>{{getAllAnnounce.title[2]}}</p>
-            <p>{{getAllAnnounce.content[2]}}</p>
-            <p>{{getAllAnnounce.date[2]}}</p>
-            <p>{{getAllAnnounce.userID[2]}}</p>
-            <p>{{getAllAnnounce.id[2]}}</p> 
-            
-
-            
+            </div>
         </div>
 
         <!-- --------------------------------------------------- -->
@@ -61,24 +37,10 @@
                 </div>
 
                 <div class="head-content">
-                    <!-- <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1> -->
-                    <h1> {{ baslik }} </h1>
+                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
                     <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı konusunda ne olduğunu bizde hala bilmiyoruz</p>
                 </div>
             </div>  
-
-            <!-- <div class="card">
-                <ul>
-                    <li :key="" v-for="userid in getAllAnnounce.userID"> {{ userid  }} </li>
-                    <li :key="title" v-for="title in getAllAnnounce.title"> {{ title  }} </li>
-                    <li :key="content" v-for="content in getAllAnnounce.content"> {{ content  }} </li>
-                </ul>
-            </div>   -->
-
-            
-
-            
-            
         </div>
     </div>
 </template>
@@ -87,18 +49,20 @@
 export default {
     data() {
         return {
-            baslik : 'PANDEMİ DUYURUSU'
         }
     },
 
     created() {
         this.$store.dispatch("getAnnounce")
     },
-
     computed : {
         getAllAnnounce() {
             return this.$store.state.announces;
-        }
+        },
+
+        isLoadAnnounce() {
+            return this.$store.state.isLoadAnnounce;
+        },
     },
 }
 </script>

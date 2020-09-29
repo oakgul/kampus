@@ -8,6 +8,7 @@ import About from '../views/About.vue'
 import Register from '../views/Register.vue'
 import Login from '../views/Login.vue'
 import Dashboard from '../views/Dashboard.vue'
+import ShareAnnounce from '../views/ShareAnnounce.vue'
 
 Vue.use(VueRouter)
 
@@ -40,10 +41,15 @@ const routes = [
       if(store.getters.isHaveToken) {
         next()
       }else{
-        next("/login")
+        // next("/login")
       }
     }
+  },
 
+  {
+    path: '/shareannounce',
+    name: 'ShareAnnounce',
+    component: ShareAnnounce
   },
   // {
   //   path: '/about',
