@@ -26,6 +26,7 @@ export default new Vuex.Store({
     },
 
     setAnnounce(state, announces) {
+      state.announces = [];
       console.log(announces);
       
       announces.map(res => {
