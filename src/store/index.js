@@ -7,7 +7,9 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     token : "",
-    announces : [],  
+    announces : [],
+    schoolAnnounce : [],
+    departmentAnnounce : [],
   },
 
   getters: {
@@ -25,12 +27,24 @@ export default new Vuex.Store({
       state.token = ""
     },
 
+    // setAnnounce(state, announces) {
+    //   state.announces = [];
+    //   console.log(announces);
+      
+    //   announces.map(res => {
+    //     state.announces.push(res)
+    //   })      
+    // },
+
     setAnnounce(state, announces) {
       state.announces = [];
+      state.schoolAnnounce = [];
+      state.departmentAnnounce = [];
       console.log(announces);
       
       announces.map(res => {
         state.announces.push(res)
+        res.tag == 'okul' ? state.schoolAnnounce.push(res) : state.departmentAnnounce.push(res);
       })      
     },
   },

@@ -1,7 +1,7 @@
 <template>
     <div class="announces">
-        <p v-if="isLoadAnnounce">Loading...</p>
         <div class="school-announce">
+            <p v-if="getAllAnnounce.length == 0">Duyuru Yok!</p>
 
             <div :key="announce._id" class="card" v-for="announce in getAllAnnounce">
                 <div class="photo-date">
@@ -25,8 +25,28 @@
         <!-- --------------------------------------------------- -->
 
         <div class="school-announce right-announce">
+            <p v-if="getDepartmentAnnounce.length == 0">Duyuru Yok!</p>
 
-            <div class="card">
+
+            <div :key="announce._id" class="card" v-for="announce in getDepartmentAnnounce">
+                <div class="photo-date">
+                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
+                    <div class="date">
+                        <div class="day">10</div>
+                        <div class="month">ŞBT</div>
+                        <div class="year">2020</div>
+                    </div>
+                </div>
+
+                <div class="head-content">
+                    <h1> {{ announce.title }} </h1>
+                    <p> {{  announce.content }} </p>
+                    <!-- <p> {{  announce.user }} </p> -->
+                    <!-- <p> {{  announce._id }} </p> -->
+                </div>
+            </div>
+
+            <!-- <div class="card">
                 <div class="photo-date">
                     <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
@@ -40,7 +60,7 @@
                     <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
                     <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı konusunda ne olduğunu bizde hala bilmiyoruz</p>
                 </div>
-            </div>  
+            </div>   -->
         </div>
     </div>
 </template>
@@ -60,8 +80,8 @@ export default {
             return this.$store.state.announces;
         },
 
-        isLoadAnnounce() {
-            return this.$store.state.isLoadAnnounce;
+        getDepartmentAnnounce() {
+            return this.$store.state.departmentAnnounce;
         },
     },
 }
