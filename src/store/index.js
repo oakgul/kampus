@@ -116,7 +116,8 @@ export default new Vuex.Store({
         body : JSON.stringify({
 
           title : payload.title,
-          content : payload.content     
+          content : payload.content,     
+          tag : payload.tag     
         }),
         headers: {
           'Content-type' : 'application/json; charset=UTF-8',
