@@ -10,6 +10,7 @@ export default new Vuex.Store({
     announces : [],
     schoolAnnounce : [],
     departmentAnnounce : [],
+    userDepartment : "",
   },
 
   getters: {
@@ -23,28 +24,30 @@ export default new Vuex.Store({
       state.token = token
     },
 
+    setDepartment(state, department) {
+      state.userDepartment = department
+    },
+
     clearToken(state) {
       state.token = ""
     },
 
-    // setAnnounce(state, announces) {
-    //   state.announces = [];
-    //   console.log(announces);
-      
-    //   announces.map(res => {
-    //     state.announces.push(res)
-    //   })      
-    // },
-
     setAnnounce(state, announces) {
+      console.log('setAnnounce çalıştı..')
       state.announces = [];
       state.schoolAnnounce = [];
       state.departmentAnnounce = [];
+      state.userDepartment = localStorage.getItem('userDepartment');
+
+
       console.log(announces);
+      console.log(`User Department : ${state.userDepartment}`);
       
       announces.map(res => {
         state.announces.push(res)
-        res.tag == 'okul' ? state.schoolAnnounce.push(res) : state.departmentAnnounce.push(res);
+        res.tag == 'okul' ? state.schoolAnnounce.push(res) : null
+        res.tag == state.userDepartment ? state.departmentAnnounce.push(res) : null
+        
       })      
     },
   },
@@ -101,7 +104,8 @@ export default new Vuex.Store({
           console.log(result);
           commit("setToken", result.access_token)
           localStorage.setItem('token', result.access_token)
-          console.log(result.access_token);
+          commit("setDepartment", result.data.tag)
+          localStorage.setItem('userDepartment', result.data.tag)         
         })
         .catch(err => console.log(err)) 
     },
@@ -120,6 +124,7 @@ export default new Vuex.Store({
     .catch(err => console.log(err))   
     commit("clearToken")
     localStorage.removeItem('token')
+    localStorage.removeItem('userDepartment')
     
     },
 

@@ -17,9 +17,9 @@
                     <option value="diğer">Diğer</option>
                 </select><br>
                 <select v-model="user.department">
-                    <option selected value="Bilgisayar Programcılığı">Bilgisayar Mühendisliği</option>
-                    <option value="Kimya Teknolojileri">Kimya Mühendisliği</option>
-                    <option value="Tıbbi Aromatik Bitkiler">Biyoloji Mühendisliği</option>
+                    <option selected value="bilgisayar">Bilgisayar Mühendisliği</option>
+                    <option value="kimya">Kimya Mühendisliği</option>
+                    <option value="tab">Biyoloji Mühendisliği</option>
                 </select><br>
                 <select v-model="user.role">
                     <option value="student">Öğrenci</option>

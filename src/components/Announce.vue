@@ -1,7 +1,7 @@
 <template>
     <div class="announces">
         <div class="school-announce">
-            <p v-if="getSchoolAllAnnounce.length == 0">Duyuru Yok!</p>
+            <p class="no-announce" v-if="getSchoolAllAnnounce.length == 0">Duyuru Yok!</p>
 
             <div :key="announce._id" class="card" v-for="announce in getSchoolAllAnnounce">
                 <div class="photo-date">
@@ -16,8 +16,6 @@
                 <div class="head-content">
                     <h1> {{ announce.title }} </h1>
                     <p> {{  announce.content }} </p>
-                    <!-- <p> {{  announce.user }} </p> -->
-                    <!-- <p> {{  announce._id }} </p> -->
                 </div>
             </div>
         </div>
@@ -25,7 +23,7 @@
         <!-- --------------------------------------------------- -->
 
         <div class="school-announce right-announce">
-            <p v-if="getDepartmentAnnounce.length == 0">Duyuru Yok!</p>
+            <p class="no-announce" v-if="getDepartmentAnnounce.length == 0">Duyuru Yok!</p>
 
 
             <div :key="announce._id" class="card" v-for="announce in getDepartmentAnnounce">
@@ -41,26 +39,8 @@
                 <div class="head-content">
                     <h1> {{ announce.title }} </h1>
                     <p> {{  announce.content }} </p>
-                    <!-- <p> {{  announce.user }} </p> -->
-                    <!-- <p> {{  announce._id }} </p> -->
                 </div>
             </div>
-
-            <!-- <div class="card">
-                <div class="photo-date">
-                    <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
-                    <div class="date">
-                        <div class="day">20</div>
-                        <div class="month">TEM</div>
-                        <div class="year">2020</div>
-                    </div>
-                </div>
-
-                <div class="head-content">
-                    <h1>PANDEMİ OKUL AÇILIŞ TARİHİ</h1>
-                    <p>Sayın öğrenciler bildiğiniz üzere pandemi gerekçesiyle okulumuza ara vermek zorunda kaldık. Okulun ne zmaan açılacağı konusunda ne olduğunu bizde hala bilmiyoruz</p>
-                </div>
-            </div>   -->
         </div>
     </div>
 </template>
@@ -69,6 +49,8 @@
 export default {
     data() {
         return {
+
+            
         }
     },
 
@@ -97,7 +79,10 @@ export default {
             overflow: auto;
             height: calc(100vh - 66px);
             
-
+            .no-announce {                
+                font-size: 30px;
+                padding-right: 323px;
+            }
 
             .card {
                 width: 470px;
