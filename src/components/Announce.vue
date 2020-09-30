@@ -1,9 +1,9 @@
 <template>
     <div class="announces">
         <div class="school-announce">
-            <p v-if="getAllAnnounce.length == 0">Duyuru Yok!</p>
+            <p v-if="getSchoolAllAnnounce.length == 0">Duyuru Yok!</p>
 
-            <div :key="announce._id" class="card" v-for="announce in getAllAnnounce">
+            <div :key="announce._id" class="card" v-for="announce in getSchoolAllAnnounce">
                 <div class="photo-date">
                     <img class="card-image" src="@/assets/orhanprofil.jpg" alt="profile">
                     <div class="date">
@@ -76,8 +76,8 @@ export default {
         this.$store.dispatch("getAnnounce")
     },
     computed : {
-        getAllAnnounce() {
-            return this.$store.state.announces;
+        getSchoolAllAnnounce() {
+            return this.$store.state.schoolAnnounce;
         },
 
         getDepartmentAnnounce() {
