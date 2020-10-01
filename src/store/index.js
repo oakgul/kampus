@@ -163,5 +163,21 @@ export default new Vuex.Store({
         })
         .catch(err => console.log(err))
     },
+
+    // FORGOT PASSWORD
+    sendForgotKeyToEmail({commit, state}, payload) {
+      return fetch('https://kampus-api.herokuapp.com/api/auth/forgotpassword', {
+        method : 'POST',
+        body : JSON.stringify({
+          email : payload   
+        }),
+        headers: {
+          'Content-type' : 'application/json; charset=UTF-8',
+        }
+        })
+        .then(data => data.json())
+        .then(result => console.log(result))
+        .catch(err => console.log(err)) 
+    },
   }
 })

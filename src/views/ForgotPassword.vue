@@ -3,8 +3,8 @@
         <Header />
         <div class="forgot-card">
             <label>Yeni parola alabilmek için e-posta adresinizi yazın.</label>
-            <input class="email" type="email" placeholder="Lütfen e-posta adresinizi yazın..">
-            <button class="submit">Şifre Al</button>
+            <input v-model="email" class="email" type="email" placeholder="Lütfen e-posta adresinizi yazın..">
+            <button @click="submitForgotPassword" class="submit">Şifre Al</button>
         </div>
     </div>
 </template>
@@ -13,8 +13,22 @@
 import Header from '@/components/Header'
 
 export default {
+    data() {
+        return {
+            email : ''
+        }
+    },
+
     components : {
         Header,
+    },
+
+    methods : {
+        submitForgotPassword() {
+            console.log(this.email)
+            this.$store.dispatch("sendForgotKeyToEmail", this.email)
+            .then(res => this.$router.push("/login"))
+        }
     }
 }
 </script>
@@ -32,7 +46,7 @@ export default {
         justify-content: center;
         align-items: center;
         background: white;
-        margin: 100px auto;
+        margin: 150px auto;
 
         .email {
             width: 400px;
@@ -41,6 +55,11 @@ export default {
             border-radius: 5px;
             text-indent: 15px;
             margin-top: 15px;
+            font-size: 18px;
+
+            &:focus {
+                border-color: #1877f2;
+            }
         }
 
         .submit {
@@ -54,7 +73,7 @@ export default {
             cursor: pointer;
 
             &:hover {
-                background: cornflowerblue;
+                background: #1877f2;
             }
         }
     }
