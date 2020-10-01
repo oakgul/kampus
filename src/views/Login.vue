@@ -7,11 +7,13 @@
         </div>
         <div class="register-form">
             <!-- bu div'i form yap e.prevent default yap -->
-            <div>
+            <div class="">
                 <input v-model="user.email" required type="email" placeholder="E-posta"><br>
                 <input v-model="user.password" required type="password" placeholder="Parola"><br>      
                 <button @click="userLogin">Giriş</button>
             </div>
+            <a @click="forgotPassword" href="#" class="forgot-password" >Şifremi unuttum</a>
+            
         </div>
     </div>
     </div>
@@ -38,6 +40,10 @@ export default {
         userLogin() {
             this.$store.dispatch("login", {...this.user})
             .then(res => this.$router.push("/dashboard"))
+        },
+
+        forgotPassword() {
+            this.$router.push("/forgot")
         }
     }
 }
@@ -60,7 +66,14 @@ export default {
     }
 
     .register-form {
-        margin: auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;        
+    }
+
+    .forgot-password {
+        margin-top: 20px;
     }
 
     button {

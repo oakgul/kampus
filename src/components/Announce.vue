@@ -1,7 +1,7 @@
 <template>
     <div class="announces">
         <div class="school-announce">
-            <p class="no-announce" v-if="getSchoolAllAnnounce.length == 0">Duyuru Yok!</p>
+            <p class="no-announce" v-if="getSchoolAllAnnounce.length == 0">Loading...</p>
 
             <div :key="announce._id" class="card" v-for="announce in getSchoolAllAnnounce">
                 <div class="photo-date">
@@ -23,7 +23,7 @@
         <!-- --------------------------------------------------- -->
 
         <div class="school-announce right-announce">
-            <p class="no-announce" v-if="getDepartmentAnnounce.length == 0">Duyuru Yok!</p>
+            <p class="no-announce" v-if="getDepartmentAnnounce.length == 0">Loading...</p>
 
 
             <div :key="announce._id" class="card" v-for="announce in getDepartmentAnnounce">
@@ -47,12 +47,6 @@
 
 <script>
 export default {
-    data() {
-        return {
-
-            
-        }
-    },
 
     created() {
         this.$store.dispatch("getAnnounce")

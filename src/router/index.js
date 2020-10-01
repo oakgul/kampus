@@ -9,6 +9,7 @@ import Register from '../views/Register.vue'
 import Login from '../views/Login.vue'
 import Dashboard from '../views/Dashboard.vue'
 import ShareAnnounce from '../views/ShareAnnounce.vue'
+import ForgotPassword from '../views/ForgotPassword.vue'
 
 Vue.use(VueRouter)
 
@@ -50,6 +51,11 @@ const routes = [
     path: '/shareannounce',
     name: 'ShareAnnounce',
     component: ShareAnnounce
+  },
+  {
+    path: '/forgot',
+    name: 'forgot',
+    component: ForgotPassword
   },
   // {
   //   path: '/about',
